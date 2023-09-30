@@ -41,11 +41,11 @@ Get started by including Bootstrap's production-ready CSS and JavaScript via CDN
        <meta charset="utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1">
        <title>Bootstrap demo</title>
-       <link href="{{< param "cdn.css" >}}" rel="stylesheet" integrity="{{< param "cdn.css_hash" >}}" crossorigin="anonymous">
+       <link href="cdn.css" rel="stylesheet" integrity="cdn.css_hash" crossorigin="anonymous">
      </head>
      <body>
        <h1>Hello, world!</h1>
-       <script src="{{< param "cdn.js_bundle" >}}" integrity="{{< param "cdn.js_bundle_hash" >}}" crossorigin="anonymous"></script>
+       <script src="cdn.js_bundle" integrity="cdn.js_bundle_hash" crossorigin="anonymous"></script>
      </body>
    </html>
    ```
@@ -53,31 +53,33 @@ Get started by including Bootstrap's production-ready CSS and JavaScript via CDN
    You can also include [Popper](https://popper.js.org/) and our JS separately. If you don't plan to use dropdowns, popovers, or tooltips, save some kilobytes by not including Popper.
 
    ```html
-   <script src="{{< param "cdn.popper" >}}" integrity="{{< param "cdn.popper_hash" >}}" crossorigin="anonymous"></script>
-   <script src="{{< param "cdn.js" >}}" integrity="{{< param "cdn.js_hash" >}}" crossorigin="anonymous"></script>
+   <script src="cdn.popper" integrity="cdn.popper_hash" crossorigin="anonymous"></script>
+   <script src="cdn.js" integrity="cdn.js_hash" crossorigin="anonymous"></script>
    ```
 
-3. **Hello, world!** Open the page in your browser of choice to see your Bootstrapped page. Now you can start building with Bootstrap by creating your own [layout]({{< docsref "/layout/grid" >}}), adding dozens of [components]({{< docsref "/components/buttons" >}}), and utilizing [our official examples]({{< docsref "/examples" >}}).
+3. **Hello, world!** Open the page in your browser of choice to see your Bootstrapped page. Now you can start building with Bootstrap by creating your own [layout](/layout/grid), adding dozens of [components](/components/buttons), and utilizing [our official examples](/examples).
 
 ## CDN links
 
 As reference, here are our primary CDN links.
 
-{{< bs-table >}}
+<div class="table-responsive" markdown="1">
+
 | Description | URL |
 | --- | --- |
-| CSS | `{{< param "cdn.css" >}}` |
-| JS | `{{< param "cdn.js_bundle" >}}` |
-{{< /bs-table >}}
+| CSS | `cdn.css` |
+| JS | `cdn.js_bundle` |
 
-You can also use the CDN to fetch any of our [additional builds listed in the Contents page]({{< docsref "/getting-started/contents" >}}).
+</div>
+
+You can also use the CDN to fetch any of our [additional builds listed in the Contents page](/getting-started/contents).
 
 ## Next steps
 
 - Read a bit more about some [important global environment settings](#important-globals) that Bootstrap utilizes.
-- Read about what's included in Bootstrap in our [contents section]({{< docsref "/getting-started/contents/" >}}) and the list of [components that require JavaScript](#js-components) below.
-- Need a little more power? Consider building with Bootstrap by [including the source files via package manager]({{< docsref "/getting-started/download#package-managers" >}}).
-- Looking to use Bootstrap as a module with `<script type="module">`? Please refer to our [using Bootstrap as a module]({{< docsref "/getting-started/javascript#using-bootstrap-as-a-module" >}}) section.
+- Read about what's included in Bootstrap in our [contents section](/getting-started/contents/) and the list of [components that require JavaScript](#js-components) below.
+- Need a little more power? Consider building with Bootstrap by [including the source files via package manager](/getting-started/download#package-managers}).
+- Looking to use Bootstrap as a module with `<script type="module">`? Please refer to our [using Bootstrap as a module](/getting-started/javascript#using-bootstrap-as-a-module) section.
 
 ## JS components
 
@@ -139,17 +141,17 @@ Learn more about [box model and sizing at CSS Tricks](https://css-tricks.com/box
 
 ### Reboot
 
-For improved cross-browser rendering, we use [Reboot]({{< docsref "/content/reboot" >}}) to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.
+For improved cross-browser rendering, we use [Reboot](/content/reboot) to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.
 
 ## Community
 
 Stay up-to-date on the development of Bootstrap and reach out to the community with these helpful resources.
 
-- Read and subscribe to [The Official Bootstrap Blog]({{< param blog >}}).
+- Read and subscribe to [The Official Bootstrap Blog](blog).
 - Ask questions and explore [our GitHub Discussions](https://github.com/twbs/bootstrap/discussions).
 - Discuss, ask questions, and more on [the community Discord](https://discord.gg/bZUvakRU3M) or [Bootstrap subreddit](https://reddit.com/r/bootstrap).
 - Chat with fellow Bootstrappers in IRC. On the `irc.libera.chat` server, in the `#bootstrap` channel.
 - Implementation help may be found at Stack Overflow (tagged [`bootstrap-5`](https://stackoverflow.com/questions/tagged/bootstrap-5)).
 - Developers should use the keyword `bootstrap` on packages that modify or add to the functionality of Bootstrap when distributing through [npm](https://www.npmjs.com/search?q=keywords:bootstrap) or similar delivery mechanisms for maximum discoverability.
 
-You can also follow [@getbootstrap on Twitter](https://twitter.com/{{< param twitter >}}) for the latest gossip and awesome music videos.
+You can also follow [@getbootstrap on Twitter](https://twitter.com/twitter) for the latest gossip and awesome music videos.
