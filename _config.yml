@@ -1,6 +1,11 @@
 markdown: kramdown
+#highlighter: rouge
 kramdown:
   syntax_highlighter_opts:
     disable : true
 sass:
   sass_dir: css
+title: Example
+description: description of website
+authors: authors of website
+edit_root_url: https://github.com/soywiz/docs-prototype/blob/main/
